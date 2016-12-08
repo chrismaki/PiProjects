@@ -9,7 +9,7 @@ camera.brightness = 70
 sleep(5)
 x = 100
 while x < loops :
-        name = 'picout/image' + str(x) + '.jpg'
+        name = '../picout/image' + str(x) + '.jpg'
         camera.capture(name)
         x = x + 1
         sleep(60)
