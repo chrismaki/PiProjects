@@ -8,4 +8,3 @@ for file in *.jpg ; do
    convert "$file" -font /usr/share/fonts/truetype/msttcorefonts/Arial.ttf -pointsize 12 -fill blue -annotate +6+474  "$date $time" "dated-${file}"
    #convert "$file" -font /usr/share/fonts/truetype/msttcorefonts/Arial.ttf -pointsize 18 -fill blue -annotate +6+474  %[exif:DateTimeOriginal] "dated-${file}"
 done
-
