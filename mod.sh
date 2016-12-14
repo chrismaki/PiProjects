@@ -1,5 +1,6 @@
 #!/bin/bash
-
+WDIR="~/code/picout/"
+echo $WDIR
 for file in *.jpg ; do
    echo "Working on  file:" $file
    date=`identify  -format %[EXIF:DateTime] $file | awk '{print $1}'| awk -F: '{print $3"."$2"."$1}'`
