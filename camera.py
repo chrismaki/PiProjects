@@ -3,7 +3,7 @@ import picamera
 outpath = "/home/pi/Pictures/picout/"
 filename = "image"
 from time import sleep
-loops = 999
+loops = 2260
 camera = picamera.PiCamera()
 camera.vflip = False
 camera.hflip = False
@@ -14,4 +14,4 @@ while x < loops :
         name = outpath + filename + str(x) + '.jpg'
         camera.capture(name)
         x = x + 1
-        sleep(60)
+        sleep(15)
